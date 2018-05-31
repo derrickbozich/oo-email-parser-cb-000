@@ -20,9 +20,7 @@ class EmailParser
   def parse
     array = @@email_addresses.to_s.scan(/\w+@\w+.\w+/)
     array = array.uniq
-
   end
-
 end
 
 # email_class = EmailParser.new("avi@test.com, arel@test.com test@avi.com, test@arel.com ")
